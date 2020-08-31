@@ -3,6 +3,24 @@
 
 #include "TelCoColorCoder.h"
 
+void  ToString()                          
+{
+    using namespace TelCoColorCoder;
+    int pairNumber;
+    int totalColorPairs=numberOfMinorColors*numberOfMajorColors;
+    
+    std::cout << std::endl << "Color Code Manual"<< std::endl;
+    for(pairNumber=1;pairNumber<=totalPairs;pairNumber++)
+    {
+	TelCoColorCoder::ColorPair colorPair[totalColorPair];
+        TelCoColorCoder::ColorPair colorPair[pairNumber] =
+            TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+
+        std::cout << pairNumber <<"." << colorPair.ToString() << std::endl;
+    }
+
+}
+
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
