@@ -7,10 +7,11 @@ void  ToString()
 {
     using namespace TelCoColorCoder;
     int pairNumber;
+    int numberOfMinorColors, numberOfMajorColors;
     int totalColorPairs=numberOfMinorColors*numberOfMajorColors;
     
     std::cout << std::endl << "Color Code Manual"<< std::endl;
-    for(pairNumber=1;pairNumber<=totalPairs;pairNumber++)
+    for(pairNumber=1;pairNumber<=totalColorPairs;pairNumber++)
     {
 	TelCoColorCoder::ColorPair colorPair[totalColorPair];
         TelCoColorCoder::ColorPair colorPair[pairNumber] =
